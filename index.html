@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transcrição e Tradução</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <section id="transcricao">
+            <h1>Transcritor Automático</h1>
+            <textarea id="texto-transcrito" 
+                      rows="6"
+                      cols="80"
+                      name="texto" 
+                      placeholder="Aperte o botão e fale"
+                      readonly></textarea>
+            <button id="transcrever">Iniciar Transcrição</button>
+        </section>
+        
+        <section id="traducao" class="hidden">
+            <h1>Tradução Automática</h1>
+            <textarea id="texto-traduzido" 
+                      rows="6"
+                      cols="80"
+                      name="texto" 
+                      placeholder="Texto traduzido aparecerá aqui"
+                      readonly></textarea>
+            <button id="voltar">Voltar</button>
+        </section>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
